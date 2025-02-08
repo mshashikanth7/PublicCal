@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/logo.svg";
 import "./NavBar.css";
 import { HashLink } from "react-router-hash-link";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +19,6 @@ export const NavBar = () => {
     };
 
     window.addEventListener("scroll", onScroll);
-
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -33,7 +32,7 @@ export const NavBar = () => {
       style={{ backgroundColor: "rgba(0,0,0,0.4)" }}
     >
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand as={Link} to="/normal">
           <img src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -48,15 +47,19 @@ export const NavBar = () => {
             }}
           >
             <Nav.Link
-              href="/"
-              className={isActive("/") ? "active navbar-link" : "navbar-link"}
+              as={Link}
+              to="/normal"
+              className={
+                isActive("/normal") ? "active navbar-link" : "navbar-link"
+              }
               style={{ margin: "0 20px" }}
             >
               Calculator
             </Nav.Link>
 
             <Nav.Link
-              href="/signup"
+              as={Link}
+              to="/signup"
               className={
                 isActive("/signup") ? "active navbar-link" : "navbar-link"
               }
@@ -64,8 +67,10 @@ export const NavBar = () => {
             >
               Trans
             </Nav.Link>
+
             {/* <Nav.Link
-              href="/projects"
+              as={Link}
+              to="/projects"
               className={
                 isActive("/projects") ? "active navbar-link" : "navbar-link"
               }
@@ -74,6 +79,7 @@ export const NavBar = () => {
               CustomTrans
             </Nav.Link> */}
           </Nav>
+
           <span className="ex navbar-text">
             <HashLink to="/explore" style={{ margin: "0 20px" }}>
               <button className="btn">

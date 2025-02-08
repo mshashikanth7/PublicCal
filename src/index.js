@@ -8,6 +8,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { NavBar } from "./components/NavBarComp/NavBar";
 import Tcal from "./Tcal";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import KeyCollect from "./KeyCollect";
 
 import CalcProvider from "./context/CalcContext";
@@ -19,18 +20,18 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <CalcProvider>
     <KeyProvider>
-      <BrowserRouter>
+      <HashRouter>
         <NavBar />
 
         <Routes>
-          <Route path="/" element={<Ncal />} />
+          <Route path="/normal" element={<Ncal />} />
           <Route path="/signup" element={<Tcal />} />
-          <Route path="/projects" element={<KeyCollect />} />
+          {/* <Route path="/projects" element={<KeyCollect />} /> */}
           <Route path="/Explore" element={<PlainComponent />} />
         </Routes>
 
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </KeyProvider>
   </CalcProvider>
 );
