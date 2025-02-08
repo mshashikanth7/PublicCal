@@ -32,7 +32,7 @@ const Button = ({ value }) => {
             : calc.num2
           : calc.num2,
     });
-    console.log(calc);
+    //console.log(calc);
   };
 
   const resetClickHandler = () => {
@@ -42,7 +42,7 @@ const Button = ({ value }) => {
       num2: 0,
       res: 0,
     });
-    console.log(calc);
+    //console.log(calc);
   };
 
   const invertClickHandler = () => {
@@ -51,7 +51,7 @@ const Button = ({ value }) => {
       num1: calc.sign === "" ? calc.num1 * -1 : calc.num1,
       num2: calc.sign !== "" ? calc.num2 * -1 : calc.num2,
     });
-    console.log(calc);
+    //console.log(calc);
   };
 
   const percentClickHandler = () => {
@@ -66,7 +66,7 @@ const Button = ({ value }) => {
       num1: 0,
       num2: 0,
     });
-    console.log(calc);
+    //console.log(calc);
   };
   function truncateToDecimals(num, decimals) {
     const factor = Math.pow(10, decimals);
@@ -91,7 +91,7 @@ const Button = ({ value }) => {
       num2: 0,
     });
 
-    console.log(calc);
+    //console.log(calc);
   };
 
   const signClickHandler = () => {
@@ -110,7 +110,7 @@ const Button = ({ value }) => {
       });
     }
 
-    console.log(calc);
+    //console.log(calc);
   };
 
   const numClickHandler = () => {

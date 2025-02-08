@@ -33,15 +33,15 @@ const Tcal = () => {
   const { setMapKeys, mapKeys } = useContext(KeyContext);
   const { selectedOption, setSelectedOption } = useContext(KeyContext);
   // useEffect(() => {
-  //   console.log("Received mapKeys in Tcal:", mapKeys);
+  //   //console.log("Received mapKeys in Tcal:", mapKeys);
   // }, [mapKeys]);
   // const { setActiveHandler } = useContext(KeyContext);
   // useEffect(() => {
-  //   console.log("Tcal mounted with mapKeys:", mapKeys);
-  //   console.log("Tcal mounted with calc:", calc);
+  //   //console.log("Tcal mounted with mapKeys:", mapKeys);
+  //   //console.log("Tcal mounted with calc:", calc);
 
   //   return () => {
-  //     console.log("Tcal unmounting");
+  //     //console.log("Tcal unmounting");
   //   };
   // }, []);
 
@@ -55,7 +55,7 @@ const Tcal = () => {
 
   useEffect(() => {
     window.addEventListener("keydown", keyD);
-    console.log();
+    //console.log();
     return () => {
       window.removeEventListener("keydown", keyD);
     };
@@ -65,25 +65,25 @@ const Tcal = () => {
   const keyD = (event) => {
     //code to fixed space issue
     event.preventDefault();
-    console.log("form the Tcal", mapKeys);
-    console.log("recived key", event.key);
-    console.log("recived key code", event.code);
+    //console.log("form the Tcal", mapKeys);
+    //console.log("recived key", event.key);
+    //console.log("recived key code", event.code);
 
     const b = event.key;
 
-    console.log("pressed key value:", b);
+    //console.log("pressed key value:", b);
 
     function findKeyByValue(mapKeys, value) {
       // clog the mapKeys and the value
-      console.log("Searching for value:", value);
-      console.log("Current mapKeys:", mapKeys);
+      //console.log("Searching for value:", value);
+      //console.log("Current mapKeys:", mapKeys);
 
       return (
         Object.entries(mapKeys).find(([key, val]) => val === value)?.[0] || null
       );
     }
 
-    console.log("deliverd value", b);
+    //console.log("deliverd value", b);
 
     if (b === "Meta") {
       var a = findKeyByValue(mapKeys, "Alt")
@@ -94,7 +94,7 @@ const Tcal = () => {
     } else {
       var a = findKeyByValue(mapKeys, b);
     }
-    console.log("found value", a);
+    //console.log("found value", a);
 
     // if (event.key === "Shift") return;
 

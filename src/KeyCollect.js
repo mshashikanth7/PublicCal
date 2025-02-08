@@ -33,7 +33,7 @@ function KeyCollect() {
   const [img, setImg] = useState("");
   const { mapKeys, setMapKeys } = useContext(KeyContext);
   useEffect(() => {
-    console.log("Received mapKeys in Tcal:", mapKeys);
+    ////console.log("Received mapKeys in Tcal:", mapKeys);
   }, [mapKeys]);
   const [flag, setFlag] = useState(true);
   const handleSubmit = (e) => {
@@ -47,7 +47,7 @@ function KeyCollect() {
           acc[input.id] = input.value;
         }
 
-        console.log(input.id, input.value);
+        ////console.log(input.id, input.value);
         return acc;
       }, {});
     // const inputs = Array.from(document.querySelectorAll(".KI"))
@@ -57,11 +57,11 @@ function KeyCollect() {
     //     return acc;
     //   }, new Map());
 
-    // console.log(inputs.get("someId").get("value")); // Retrieve the value
-    // console.log(inputs);
+    // ////console.log(inputs.get("someId").get("value")); // Retrieve the value
+    // //console.log(inputs);
 
     setDa(inputs); // Completely replace `da` with new inputs
-    console.log(mapKeys);
+    //console.log(mapKeys);
 
     setMapKeys(inputs);
     setCalc({
@@ -70,14 +70,14 @@ function KeyCollect() {
       num2: 0,
       res: 0,
     });
-    console.log(mapKeys);
+    //console.log(mapKeys);
     if (Object.keys(inputs).length !== 19) {
       setFlag(false);
     }
   };
 
   const handleOptionChange = (option) => {
-    console.log(`Selected option in parent: ${option}`);
+    //console.log(`Selected option in parent: ${option}`);
     if (option === "LeftHand") {
       setImg("a");
       const newDa = {
@@ -144,7 +144,7 @@ function KeyCollect() {
         C: "6",
         x: "8",
       };
-      console.log(truL);
+      //console.log(truL);
       // setDa(newDa); // Completely replace with LeftHand mapping
       // setMapKeys(newDa);
       setDa(truL);

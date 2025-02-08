@@ -47,7 +47,7 @@
 }
 .btna:hover {
   transform: scale(1.4);
-  background: linear-gradient(315deg, #36dd78 10%, #1fc6eb);
+  background: linear-gradient(315deg, #36dd793f 10%, #1fc6eb4b);
   border-radius: 20px;
 }
 .i {

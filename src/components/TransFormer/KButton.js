@@ -77,7 +77,7 @@ const KButton = ({ value }) => {
       e.key !== "Alt"
     ) {
       setKeyInput(e.key);
-      console.log(e.key);
+      //console.log(e.key);
     }
   };
 

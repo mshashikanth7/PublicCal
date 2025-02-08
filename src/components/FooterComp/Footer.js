@@ -4,8 +4,10 @@ import { Scale } from "lucide-react";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 
 function Footer() {
+  const location = useLocation();
   return (
     <div className="mt-5 fStyle b">
       <div
@@ -34,10 +36,12 @@ function Footer() {
               </span>
               <span>with</span>
               <Link
-                href="/explore"
+                as={RouterLink}
+                to="/explore"
                 underline="always"
                 style={{ fontSize: "50px" }}
                 className=" link-underline-opacity- link-underline-opacity-100-hover "
+                onClick={() => window.scrollTo(0, 0)}
               >
                 &nbsp;purpose&nbsp;
               </Link>
@@ -94,11 +98,19 @@ function Footer() {
               </a>
               <a
                 className="btn btna btn-link btn-floating btn-lg text-light m-1"
-                href="https://discord.gg/4VYq3N9c"
+                href="https://github.com/mshashikanth7"
                 role="button"
                 data-mdb-ripple-color="light"
               >
                 <i className="i fab fa-github"></i>
+              </a>
+              <a
+                className="btn btna btn-link btn-floating btn-lg text-light m-1"
+                href="https://discord.gg/4VYq3N9c"
+                role="button"
+                data-mdb-ripple-color="light"
+              >
+                <i class="fa-brands fa-discord"></i>
               </a>
             </section>
           </div>

@@ -63,7 +63,7 @@ export const NavBar = () => {
               }
               style={{ margin: "0 20px" }}
             >
-              Trans
+              Mapped Calculator
             </Nav.Link>
 
             {/* <Nav.Link

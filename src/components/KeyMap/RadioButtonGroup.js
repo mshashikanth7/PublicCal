@@ -22,7 +22,7 @@ const RadioButtonGroup = ({ onOptionChange }) => {
           id="demo-row-radio-buttons-group-label "
           className="d-flex justify-content-center"
         >
-          Mode
+          Mapping
         </FormLabel>
         <RadioGroup
           row
