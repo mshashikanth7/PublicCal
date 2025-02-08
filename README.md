@@ -8,7 +8,6 @@ A modern, **fully customizable calculator** designed for **maximum accessibility
 - **🖐️ Left-Hand & Right-Hand Modes** – Optimized layouts for one-handed usage.
 - **⌨️ Keyboard-First Approach** – Designed to work smoothly on compact and full-sized keyboards.
 - **⚡ Minimalist & Fast UI** – No distractions, just efficient calculations.
-- **🌗 Dark & Light Mode** – Comfortable usage at any time of the day.
 
 ## 🎯 Why This Calculator?
 
