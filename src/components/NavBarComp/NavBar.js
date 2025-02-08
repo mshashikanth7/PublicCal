@@ -32,7 +32,7 @@ export const NavBar = () => {
       style={{ backgroundColor: "rgba(0,0,0,0.4)" }}
     >
       <Container>
-        <Navbar.Brand as={Link} to="/normal">
+        <Navbar.Brand as={Link} to="/">
           <img src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -48,10 +48,8 @@ export const NavBar = () => {
           >
             <Nav.Link
               as={Link}
-              to="/normal"
-              className={
-                isActive("/normal") ? "active navbar-link" : "navbar-link"
-              }
+              to="/"
+              className={isActive("/") ? "active navbar-link" : "navbar-link"}
               style={{ margin: "0 20px" }}
             >
               Calculator

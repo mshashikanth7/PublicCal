@@ -24,7 +24,7 @@ root.render(
         <NavBar />
 
         <Routes>
-          <Route path="/normal" element={<Ncal />} />
+          <Route path="/" element={<Ncal />} />
           <Route path="/signup" element={<Tcal />} />
           {/* <Route path="/projects" element={<KeyCollect />} /> */}
           <Route path="/Explore" element={<PlainComponent />} />
