@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PublicCal/static/css/main.4009f773.css",
-    "main.js": "/PublicCal/static/js/main.18d46e77.js",
+    "main.css": "/PublicCal/static/css/main.bcc28347.css",
+    "main.js": "/PublicCal/static/js/main.12bbdcfa.js",
     "static/media/footer.jpg": "/PublicCal/static/media/footer.3e29002b6ad35c232af2.jpg",
     "static/media/left.png": "/PublicCal/static/media/left.6f4dfb5636ee53cefebb.png",
     "static/media/fa-solid-900.ttf": "/PublicCal/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
@@ -16,11 +16,11 @@
     "static/media/fa-v4compatibility.woff2": "/PublicCal/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "static/media/logo.svg": "/PublicCal/static/media/logo.eaf3c0bc058e0ed6471ba20dc0af6da2.svg",
     "index.html": "/PublicCal/index.html",
-    "main.4009f773.css.map": "/PublicCal/static/css/main.4009f773.css.map",
-    "main.18d46e77.js.map": "/PublicCal/static/js/main.18d46e77.js.map"
+    "main.bcc28347.css.map": "/PublicCal/static/css/main.bcc28347.css.map",
+    "main.12bbdcfa.js.map": "/PublicCal/static/js/main.12bbdcfa.js.map"
   },
   "entrypoints": [
-    "static/css/main.4009f773.css",
-    "static/js/main.18d46e77.js"
+    "static/css/main.bcc28347.css",
+    "static/js/main.12bbdcfa.js"
   ]
 }
