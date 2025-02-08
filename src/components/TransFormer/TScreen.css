@@ -1,0 +1,30 @@
+.screen {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+
+  padding: 0 10px;
+  background-color: #4357697c;
+  border-radius: 10px;
+
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+  /* Set a fixed height */
+  font-size: 3rem;
+  /* Wrap long words to the next line */
+  /* Add vertical scrollbar if content exceeds height */
+  overflow-x: scroll; /* Prevent horizontal scrolling */
+
+  white-space: nowrap;
+  line-height: 1.2; /* Adjust line spacing for better readability */
+  text-align: right; /* Align text to the left */
+  text-align: center;
+  align-self: center;
+  /* Optional: Add a border for visualization */
+}
+.txt {
+  margin-top: 24px;
+}

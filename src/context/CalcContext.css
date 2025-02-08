@@ -1,0 +1,18 @@
+.calcu {
+  width: 340px;
+  height: 540px;
+  padding: 10px;
+  border-radius: 10px;
+
+  background-color: #489461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+
+  /* To center the component dynamically */
+  margin: center;
+  position: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 50vh;
+}

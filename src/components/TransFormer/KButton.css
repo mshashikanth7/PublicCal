@@ -1,0 +1,24 @@
+.Kbutton {
+  background: white;
+  height: 5rem;
+
+  margin-bottom: 0px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.KI {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+.Kbut {
+  background: green;
+  grid-column: 3/5;
+}

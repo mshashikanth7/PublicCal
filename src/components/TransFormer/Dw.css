@@ -1,0 +1,14 @@
+.d {
+  width: auto;
+  height: auto;
+  padding: 10px;
+
+  border-radius: 10px;
+  background-color: #489461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.Touter {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}

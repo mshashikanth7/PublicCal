@@ -1,0 +1,41 @@
+.KbuttonBox {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 equal columns */
+  gap: 1rem; /* Space between elements */
+  align-items: center; /* Center items vertically */
+}
+
+.Kbutton {
+  padding: 5px 10px; /* Adjust padding for a smaller button */
+  font-size: 14px; /* Smaller font size */
+}
+
+.KI {
+  padding: 5px; /* Adjust padding for the input */
+  font-size: 14px; /* Smaller font size */
+  width: 100%; /* Full width of the grid cell */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .KbuttonBox {
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  }
+}
+
+@media (max-width: 800px) {
+  .KbuttonBox {
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  }
+}
+
+@media (max-width: 500px) {
+  .KbuttonBox {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+}
+
+.equals {
+  background: green;
+  grid-column: 3/5;
+}

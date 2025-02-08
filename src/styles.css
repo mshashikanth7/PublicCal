@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.absolute {
+  position: absolute;
+  width: 83%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  opacity: 0.4;
+  filter: blur(15px);
+  height: 150px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.relative .w-4\/6 {
+  width: 66%;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
