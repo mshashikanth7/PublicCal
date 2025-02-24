@@ -18,6 +18,6 @@ Most calculators assume **everyone uses a full-sized keyboard**. But with **smal
 1. **Download & Install**  
    Clone this repository and install dependencies:
    ```sh
-   git clone https://github.com/yourusername/calculator-app
-   cd calculator-app
+   git clone https://github.com/mshashikanth7/PublicCal
+   cd PublicCal
    npm install
