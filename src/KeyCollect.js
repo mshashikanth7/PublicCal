@@ -6,11 +6,6 @@ import { KeyContext } from "./context/KeyContext";
 import RadioButtonGroup from "./components/KeyMap/RadioButtonGroup";
 import { CalcContext } from "./context/CalcContext";
 
-import Twrapper from "./components/KeyMap/KWrapper";
-import Screen from "./components/TransFormer/TScreen";
-import ButtonBox from "./components/KeyMap/KButtonBox";
-import TButton from "./components/TransFormer/TButton";
-
 const btnValues = [
   ["C", "+-", "%", "/"],
   [7, 8, 9, "x"],
@@ -79,28 +74,6 @@ function KeyCollect() {
   const handleOptionChange = (option) => {
     //console.log(`Selected option in parent: ${option}`);
     if (option === "LeftHand") {
-      setImg("a");
-      const newDa = {
-        0: "0",
-        1: "1",
-        2: "2",
-        3: "a",
-        4: "4",
-        a: "5",
-        6: "6",
-        7: "a",
-        8: "8",
-        9: "9",
-        "%": "%",
-        "+": "+",
-        "+-": "+-",
-        "-": "-",
-        ".": ".",
-        "/": "/",
-        "=": "=",
-        C: "C",
-        x: "x",
-      };
       const truL = {
         0: "Shift",
         1: "z",
@@ -124,53 +97,10 @@ function KeyCollect() {
 
         // Additional direct mappings
       };
-      const truR = {
-        0: " ",
-        1: "n",
-        2: "m",
-        3: ",",
-        4: "h",
-        5: "j",
-        6: "k",
-        7: "y",
-        8: "u",
-        9: "i",
-        "+": "l",
-        "+-": "o",
-        "-": "9",
-        ".": "Meta",
-        "/": "7",
-        "=": ".",
-        C: "6",
-        x: "8",
-      };
-      //console.log(truL);
-      // setDa(newDa); // Completely replace with LeftHand mapping
-      // setMapKeys(newDa);
-      setDa(truL);
+
       setMapKeys(truL);
     }
     if (option === "RightHand") {
-      const truR = {
-        0: " ",
-        1: "n",
-        2: "m",
-        3: ",",
-        4: "h",
-        5: "j",
-        6: "k",
-        7: "y",
-        8: "u",
-        9: "i",
-        "+": "l",
-        "+-": "o",
-        "-": "9",
-        ".": "Meta",
-        "/": "7",
-        "=": ".",
-        C: "6",
-        x: "8",
-      };
       const wTruR = {
         0: " ",
         1: "m",
@@ -192,7 +122,7 @@ function KeyCollect() {
         C: "7",
         x: "p",
       };
-      setDa(truR);
+
       setMapKeys(wTruR);
     }
     if (option === "Custom") {

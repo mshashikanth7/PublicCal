@@ -1,13 +1,11 @@
-import { transform } from "framer-motion";
 import "./Footer.css";
-import { Scale } from "lucide-react";
+
 import * as React from "react";
-import Box from "@mui/material/Box";
+
 import Link from "@mui/material/Link";
-import { Link as RouterLink, useLocation } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 function Footer() {
-  const location = useLocation();
   return (
     <div className="mt-5 fStyle b">
       <div
@@ -61,7 +59,7 @@ function Footer() {
                 role="button"
                 data-mdb-ripple-color="light"
               >
-                <i class="i fa-brands fa-x-twitter"></i>
+                <i className="i fa-brands fa-x-twitter"></i>
               </a>
               <a
                 className="btn btna btn-link btn-floating btn-lg text-light m-1 "
@@ -69,7 +67,7 @@ function Footer() {
                 role="button"
                 data-mdb-ripple-color="light"
               >
-                <i class=" i fa-brands fa-youtube"></i>
+                <i className=" i fa-brands fa-youtube"></i>
               </a>
 
               <a
@@ -78,7 +76,7 @@ function Footer() {
                 role="button"
                 data-mdb-ripple-color="light"
               >
-                <i class=" i fa-brands fa-reddit-alien"></i>
+                <i className=" i fa-brands fa-reddit-alien"></i>
               </a>
               <a
                 className="btn btna btn-link btn-floating btn-lg text-light m-1"
@@ -110,7 +108,7 @@ function Footer() {
                 role="button"
                 data-mdb-ripple-color="light"
               >
-                <i class="fa-brands fa-discord"></i>
+                <i className="fa-brands fa-discord"></i>
               </a>
             </section>
           </div>
